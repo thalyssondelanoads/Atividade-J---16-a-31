@@ -15,22 +15,23 @@ def main():
   while idade != -1:
     idade = int(input('Digite sua Idade : '))
     if idade == -1:
-      break
-    opiniao = int(input('Digite o Código da sua Avaliação : '))
-    if opiniao == 1:
-      soma_idades_otimo += idade
-      qtd_pessoas += 1
-    if opiniao == 3:
-      soma_opçao_regular += 1
-    if opiniao  == 2:
-      soma_bom += 1
-    qtd_pessoas_geral += 1
-
-  media_idades_otimo = soma_idades_otimo / qtd_pessoas
-
+      print('Programa Finalizado')
+    else:
+      opiniao = int(input('Digite o Código da sua Avaliação : '))
+      if opiniao == 1:
+        soma_idades_otimo += idade
+        qtd_pessoas += 1
+      if opiniao == 3:
+        soma_opçao_regular += 1
+      if opiniao  == 2:
+        soma_bom += 1
+      qtd_pessoas_geral += 1
+  
+    media_idades_otimo = soma_idades_otimo / qtd_pessoas
+  
   print(f"""====== RELATÓRIO FINAL ======
-  Média de Idade das Pessoas que Responderam Ótimo : {media_idades_otimo}
-  Quantidade de Pesoas que Responderam Regular : {soma_opçao_regular}
-  Porcentagem de Pessoas que Responderam Bom : {soma_bom / qtd_pessoas_geral * 100:.1f} %""")
-
+    Média de Idade das Pessoas que Responderam Ótimo : {media_idades_otimo}
+    Quantidade de Pesoas que Responderam Regular : {soma_opçao_regular}
+    Porcentagem de Pessoas que Responderam Bom : {soma_bom / qtd_pessoas_geral * 100:.1f} %""")
+  
 main()
