@@ -31,20 +31,21 @@ def main():
   while numero_canal != 0:
     numero_canal = int(input('Informe o Número do Canal : '))
     if numero_canal == 0:
-      break
-    pessoas_assistindo = int(input('Informe a Quantidade de Pessoas Assistindo TV : '))
-    
-    if numero_canal == 2:
-      canal_2 += pessoas_assistindo
-    elif numero_canal == 4:
-      canal_4 += pessoas_assistindo
-    elif numero_canal == 5:
-      canal_5 += pessoas_assistindo
-    elif numero_canal == 7:
-      canal_7 += pessoas_assistindo
-    elif numero_canal == 10:
-      canal_10 += pessoas_assistindo
-
+      print('Programa Finalizado')
+    else:
+      pessoas_assistindo = int(input('Informe a Quantidade de Pessoas Assistindo TV : '))
+  
+      if numero_canal == 2:
+        canal_2 += pessoas_assistindo
+      elif numero_canal == 4:
+        canal_4 += pessoas_assistindo
+      elif numero_canal == 5:
+        canal_5 += pessoas_assistindo
+      elif numero_canal == 7:
+        canal_7 += pessoas_assistindo
+      elif numero_canal == 10:
+        canal_10 += pessoas_assistindo
+  
   porcentagem_total = porcentagem_canais(numero_canal,canal_2,canal_4,canal_5,canal_7,canal_10)
-
+  
 main()  
