@@ -1,5 +1,5 @@
 def main():
-  print('Progressão Aritmética\n------------')
+  print('Progressão Geométrica\n------------')
   a0 = int(input('Digite o Início da Progressão : '))
   razao = int(input('Digite a Razão Da progressão : '))
   n = int(input('Digite a Quantidade de Termos :  '))
